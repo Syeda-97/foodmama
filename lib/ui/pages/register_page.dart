@@ -1,5 +1,6 @@
 
 import 'package:food_mama/ui/app_bars/main_appbar.dart';
+import 'package:food_mama/ui/utils/colors.dart';
 import 'package:food_mama/ui/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -15,10 +16,12 @@ class RegisterPage extends StatelessWidget {
       top: true,
       bottom: false,
       child: Scaffold(
+        backgroundColor: CustomColors.white,
         appBar:   MainAppBar(title: "Register",),
         body: Stack(
           children: <Widget>[
             Container(
+
               decoration: new BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(5.0)),
               ),
@@ -33,6 +36,7 @@ class RegisterPage extends StatelessWidget {
                 // padding: const EdgeInsets.only(left: 10.0, right: 10.0),
                 padding:  EdgeInsets.only(left: 2.78*SizeConfig.widthMultiplier, right: 2.78*SizeConfig.widthMultiplier),
                 child: Container(
+
                   margin:  EdgeInsets.only(
                     left: 2.78*SizeConfig.widthMultiplier,
                     right: 2.78*SizeConfig.widthMultiplier,

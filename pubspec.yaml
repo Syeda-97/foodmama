@@ -12,6 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  flutter_rating_bar: ^4.0.0
+  curved_navigation_bar: ^0.3.3
+  flutter_spinkit: ^4.1.2+1
   mvc_pattern: ^8.0.0
   firebase_core: ^1.10.0
   firebase_auth: ^3.2.0
@@ -40,6 +43,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/custom_images/
+    - assets/custom_images/ordered_food_images/
     - assets/custom_images/0.75x/
     - assets/custom_images/1.5x/
     - assets/custom_images/1x/

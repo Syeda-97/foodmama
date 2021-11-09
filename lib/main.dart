@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:food_mama/ui/pages/home.dart';
 import 'package:food_mama/ui/pages/signin_page.dart';
 import 'package:food_mama/ui/utils/size_config.dart';
+import 'package:food_mama/ui/widgets/loading_screen.dart';
 import 'package:overlay_support/overlay_support.dart';
 
 void main() {
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
             theme: ThemeData(
                 primarySwatch: Colors.yellow
             ),
-            home: SigninPage(),
+            home: LoadingScreen(),
           ),
         );
       });
