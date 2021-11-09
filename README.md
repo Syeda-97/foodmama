@@ -18,6 +18,5 @@ samples, guidance on mobile development, and a full API reference.
 Some user interfaces of the following apps screenshot is provided below:
 
 ![login_page](https://user-images.githubusercontent.com/56088042/140948271-7f8b761d-0ca4-4fb3-8e32-714fc7487a56.PNG)
-
 ![register_page](https://user-images.githubusercontent.com/56088042/140948266-45c3c3d2-2124-4a66-8991-7fe55e8e8845.PNG)
 
