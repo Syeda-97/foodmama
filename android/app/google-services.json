@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1000096404254",
+    "project_id": "food-mama-1e582",
+    "storage_bucket": "food-mama-1e582.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000096404254:android:c6bb97333f51ab5f71ef0f",
+        "android_client_info": {
+          "package_name": "com.example.food_mama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000096404254-s2ucf6h05p2l8h618nhciov42drqm14v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2guZE6dDeslJX4RC3QS5pp4t4g7OVjYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000096404254-s2ucf6h05p2l8h618nhciov42drqm14v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
