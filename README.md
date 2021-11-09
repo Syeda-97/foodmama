@@ -1,6 +1,6 @@
 # food_mama
 
-A new Flutter project.
+A Flutter project on Multi-Restaurant Online Ordering System.
 
 ## Getting Started
 
