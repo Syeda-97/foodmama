@@ -3,6 +3,7 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:food_mama/ui/utils/colors.dart';
 import 'package:food_mama/ui/utils/font.dart';
 import 'package:food_mama/ui/utils/size_config.dart';
+import 'package:food_mama/ui/pages/food_details_page.dart';
 class OrderedFoodCard extends StatelessWidget {
 
   String imageUrl;
@@ -37,10 +38,10 @@ class OrderedFoodCard extends StatelessWidget {
       scrollDirection: Axis.vertical,
       child: InkWell(
         onTap: () {
-          // Navigator.push(
-          //   context,
-          //   MaterialPageRoute(builder: (context) => FoodDetailsPage()),
-          // );
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => FoodDetailsPage()),
+          );
         },
         child: Card(
           elevation: 0,
@@ -105,8 +106,19 @@ Widget buildTitle() {
           ),
 
         ),
+
         Text(
-          foodType,
+          food_description,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(
+            color: Colors.black54,
+            fontSize: 1.50*SizeConfig.textMultiplier,
+            fontFamily: CustomFonts.defaultFontFamily,
+          ),
+        ),
+        Text(
+          quantity,
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(

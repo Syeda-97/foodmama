@@ -12,6 +12,7 @@ class TermsAndConditionsPage extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             title: Text("Terms And Conditions"),
+            backgroundColor: CustomColors.bgColorDark,
           ),
           body: Container(
           child: SingleChildScrollView(
@@ -28,7 +29,7 @@ class TermsAndConditionsPage extends StatelessWidget {
                     child: Text(
                      CustomString.t_and_cTitle,
                       style: TextStyle(
-                          fontSize: 2.34*SizeConfig.textMultiplier,color: Color(0xffD60E1B),fontFamily: "Metropolis",fontWeight: FontWeight.bold),
+                          fontSize: 2.34*SizeConfig.textMultiplier,color: CustomColors.bgColorLight,fontFamily: "Metropolis",fontWeight: FontWeight.bold),
                     ),
                   ),
                   Padding(
@@ -36,7 +37,7 @@ class TermsAndConditionsPage extends StatelessWidget {
                         top: 1.56*SizeConfig.widthMultiplier, left: 5.6*SizeConfig.widthMultiplier, right: 5.6*SizeConfig.widthMultiplier, bottom: 0.8*SizeConfig.widthMultiplier),
                     child: Text(
                       CustomString.introTitle,
-                      style: TextStyle(fontSize: 2.19*SizeConfig.textMultiplier,color: Color(0xffD60E1B),fontFamily: "Metropolis",),
+                      style: TextStyle(fontSize: 2.19*SizeConfig.textMultiplier,color: CustomColors.linkColor,fontFamily: "Metropolis",),
                     ),
                   ),
                   Padding(

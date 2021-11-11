@@ -13,7 +13,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
     double height = MediaQuery.of(context).size.height;
 
     return Container(
-      color: CustomColors.yellow,
+      color: CustomColors.bgColorLight,
       child: Padding(
         padding: const EdgeInsets.only(
           top:15,

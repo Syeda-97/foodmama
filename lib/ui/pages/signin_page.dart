@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:food_mama/ui/app_bars/login_appbar.dart';
+import 'package:food_mama/ui/utils/colors.dart';
 import 'package:food_mama/ui/utils/images.dart';
 import 'package:food_mama/ui/utils/size_config.dart';
 import 'package:food_mama/ui/widgets/signin_form.dart';
@@ -50,13 +51,13 @@ class SigninPage extends StatelessWidget {
                           Container(
                             child: CircleAvatar(
                               radius: 25*SizeConfig.imageSizeMultiplier,
-                              backgroundColor: Color(0xfffecb00),
+                              backgroundColor: CustomColors.bgColorLight,
                               child:  Container(
                                 width: 63.89*SizeConfig.widthMultiplier,
                                 height: 15.63*SizeConfig.heightMultiplier,
                                 alignment: Alignment.center,
                                 child: Image.asset(
-                                  CustomImages.food_logo,
+                                  CustomImages.login_logo,
                                 ),
                               ),
                             ),

@@ -236,7 +236,7 @@ class SignInButtonWidget extends StatelessWidget {
           : 6.25 * SizeConfig.heightMultiplier,
       child: RaisedButton(
         onPressed: _onLoginButtonPressed,
-        color: CustomColors.yellow,
+        color: CustomColors.bgColorLight,
         // textColor: Colors.black,
         elevation: 1.56 *
             SizeConfig

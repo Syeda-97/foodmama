@@ -9,7 +9,8 @@ class PrivacyPolicyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-          appBar: AppBar(title: Text("Privacy"),),
+          appBar: AppBar(title: Text("Privacy"),
+          backgroundColor: CustomColors.bgColorDark,),
           body: Container(
           child: SingleChildScrollView(
             child: Padding(
@@ -28,7 +29,7 @@ class PrivacyPolicyPage extends StatelessWidget {
                     ),
                     child: Text(
                      CustomString.privacyPolicyTitle,
-                      style: TextStyle(fontSize:  2.34*SizeConfig.textMultiplier,color: Color(0xffD60E1B),fontFamily: "Metropolis",fontWeight: FontWeight.bold),
+                      style: TextStyle(fontSize:  2.34*SizeConfig.textMultiplier,color: CustomColors.bgColorLight,fontFamily: "Metropolis",fontWeight: FontWeight.bold),
                     ),
                   ),
                   Padding(

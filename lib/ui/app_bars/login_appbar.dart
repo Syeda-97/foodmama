@@ -22,7 +22,7 @@ class LoginAppbar extends StatelessWidget {
                   child: Icon(Icons.navigate_before,
                     color: CustomColors.black,),
                   foregroundColor: CustomColors.white,
-                  backgroundColor: CustomColors.yellow
+                  backgroundColor: CustomColors.bgColorLight
               ),
             ),
             width: 8.89*SizeConfig.widthMultiplier,

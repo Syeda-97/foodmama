@@ -14,4 +14,6 @@ class CustomColors {
   static const iconColor = Color(0xFF666666);
   static const hintColor = Color(0xffc3c3c3);
   static const borderSideColor =  Color(0xffb3b3b3);
+  static const bgColorLight = Color(0xff1a73e8);
+  static const bgColorDark = Color(0xff1967d2);
 }

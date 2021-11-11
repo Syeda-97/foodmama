@@ -20,8 +20,9 @@ class MyApp extends StatelessWidget {
             title: 'FoodMama',
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
-                primarySwatch: Colors.yellow
+                primarySwatch: Colors.blue
             ),
+            // home: LoadingScreen(),
             home: LoadingScreen(),
           ),
         );

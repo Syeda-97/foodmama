@@ -426,7 +426,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
                         // unselectedWidgetColor: Color(0xffd50e1b)
                       ),
                       child: Checkbox(
-                        activeColor:  CustomColors.yellow,
+                        activeColor:  CustomColors.bgColorLight,
                         checkColor: Colors.white,
                         value: _agree,
                         onChanged: (bool value) {
@@ -515,7 +515,7 @@ class NextButtonWidget extends StatelessWidget {
         onPressed: (){
 
         },
-        color: CustomColors.yellow,
+        color: CustomColors.bgColorLight,
         // textColor: Colors.white,
         elevation: 1.56 *
             SizeConfig
