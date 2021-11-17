@@ -16,7 +16,7 @@ class _HistoryPageState extends State<HistoryPage> {
         appBar: PlainAppBar(),
         body: Center(
           child: Container(
-            color: Colors.pink,
+           // color: Colors.pink,
           ),
         ),
       ),

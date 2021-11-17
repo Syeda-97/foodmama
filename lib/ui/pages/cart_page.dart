@@ -15,7 +15,7 @@ class _CardPageState extends State<CardPage> {
     return Scaffold(
       appBar: MainAppBar(title: "Cart",),
       body: Container(
-        color: Colors.black,
+       // color: Colors.black,
       ),
     );
   }

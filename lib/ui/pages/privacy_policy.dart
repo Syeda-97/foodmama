@@ -1,4 +1,5 @@
 import 'package:flutter/gestures.dart';
+import 'package:food_mama/ui/app_bars/main_appbar.dart';
 import 'package:food_mama/ui/utils/colors.dart';
 import 'package:food_mama/ui/utils/size_config.dart';
 import 'package:food_mama/ui/utils/strings.dart';
@@ -9,8 +10,9 @@ class PrivacyPolicyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-          appBar: AppBar(title: Text("Privacy"),
-          backgroundColor: CustomColors.bgColorDark,),
+          appBar: MainAppBar(title:"Privacy",
+         // backgroundColor: CustomColors.bgColorDark,
+          ),
           body: Container(
           child: SingleChildScrollView(
             child: Padding(
@@ -29,7 +31,7 @@ class PrivacyPolicyPage extends StatelessWidget {
                     ),
                     child: Text(
                      CustomString.privacyPolicyTitle,
-                      style: TextStyle(fontSize:  2.34*SizeConfig.textMultiplier,color: CustomColors.bgColorLight,fontFamily: "Metropolis",fontWeight: FontWeight.bold),
+                      style: TextStyle(fontSize:  2.34*SizeConfig.textMultiplier,fontFamily: "Metropolis",fontWeight: FontWeight.bold),
                     ),
                   ),
                   Padding(
@@ -59,9 +61,9 @@ class PrivacyPolicyPage extends StatelessWidget {
                               TextSpan(
                                 text: CustomString.footerHead,
                                 style: TextStyle(
-                                    fontSize: 1.25*SizeConfig.textMultiplier,
+                                    fontSize: 1.8*SizeConfig.textMultiplier,
                                     fontFamily: "Metropolis",
-                                    color: Colors.grey
+                                    color: Colors.black54
                                   // color: Color(0xffF2F2F2)
                                 ),
 
@@ -74,7 +76,7 @@ class PrivacyPolicyPage extends StatelessWidget {
                                   },
                                 text: CustomString.footerLink,
                                 style: TextStyle(
-                                    fontSize: 1.25*SizeConfig.textMultiplier,
+                                    fontSize: 1.8*SizeConfig.textMultiplier,
                                     fontFamily: "Metropolis",
                                     color: CustomColors.linkColor
                                   // color: Color(0xffF2F2F2)

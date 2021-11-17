@@ -1,4 +1,5 @@
 import 'package:flutter/gestures.dart';
+import 'package:food_mama/ui/app_bars/main_appbar.dart';
 import 'package:food_mama/ui/utils/colors.dart';
 import 'package:food_mama/ui/utils/size_config.dart';
 import 'package:food_mama/ui/utils/strings.dart';
@@ -10,9 +11,9 @@ class TermsAndConditionsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-          appBar: AppBar(
-            title: Text("Terms And Conditions"),
-            backgroundColor: CustomColors.bgColorDark,
+          appBar: MainAppBar(
+            title:"Terms And Conditions",
+           // backgroundColor: CustomColors.bgColorDark,
           ),
           body: Container(
           child: SingleChildScrollView(
@@ -29,7 +30,7 @@ class TermsAndConditionsPage extends StatelessWidget {
                     child: Text(
                      CustomString.t_and_cTitle,
                       style: TextStyle(
-                          fontSize: 2.34*SizeConfig.textMultiplier,color: CustomColors.bgColorLight,fontFamily: "Metropolis",fontWeight: FontWeight.bold),
+                          fontSize: 2.34*SizeConfig.textMultiplier,fontFamily: "Metropolis",fontWeight: FontWeight.bold),
                     ),
                   ),
                   Padding(
@@ -37,7 +38,7 @@ class TermsAndConditionsPage extends StatelessWidget {
                         top: 1.56*SizeConfig.widthMultiplier, left: 5.6*SizeConfig.widthMultiplier, right: 5.6*SizeConfig.widthMultiplier, bottom: 0.8*SizeConfig.widthMultiplier),
                     child: Text(
                       CustomString.introTitle,
-                      style: TextStyle(fontSize: 2.19*SizeConfig.textMultiplier,color: CustomColors.linkColor,fontFamily: "Metropolis",),
+                      style: TextStyle(fontSize: 2.19*SizeConfig.textMultiplier,fontFamily: "Metropolis",),
                     ),
                   ),
                   Padding(
@@ -67,9 +68,9 @@ class TermsAndConditionsPage extends StatelessWidget {
                      TextSpan(
                        text: CustomString.footerHead,
                        style: TextStyle(
-                           fontSize: 1.25*SizeConfig.textMultiplier,
+                           fontSize: 1.8*SizeConfig.textMultiplier,
                            fontFamily: "Metropolis",
-                           color: Colors.grey
+                          color: Colors.black54
                          // color: Color(0xffF2F2F2)
                        ),
 
@@ -82,7 +83,7 @@ class TermsAndConditionsPage extends StatelessWidget {
                          },
                        text: CustomString.footerLink,
                        style: TextStyle(
-                           fontSize: 1.25*SizeConfig.textMultiplier,
+                           fontSize: 1.8*SizeConfig.textMultiplier,
                            fontFamily: "Metropolis",
                            color: CustomColors.linkColor
                          // color: Color(0xffF2F2F2)

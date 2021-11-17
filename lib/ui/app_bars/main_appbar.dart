@@ -13,10 +13,11 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
     double height = MediaQuery.of(context).size.height;
 
     return Container(
-      color: CustomColors.bgColorLight,
+     // color: CustomColors.bgColorLight,
+      color: Theme.of(context).colorScheme.secondary,
       child: Padding(
-        padding: const EdgeInsets.only(
-          top:15,
+        padding:  EdgeInsets.only(
+          top:1.3*SizeConfig.heightMultiplier,
         ),
         child: Container(
           height: 40,
@@ -24,7 +25,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
                     border: Border(
                       bottom: BorderSide(
                         width: 2,
-                        color: Colors.black
+                       // color: Colors.black
                       )
                     )
                   ),
@@ -42,8 +43,8 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
                   },
                   child: Icon(
                     Icons.navigate_before,
-                    size: 6 * SizeConfig.imageSizeMultiplier, //mob...big mob...tab
-                    color: CustomColors.black,
+                    size: 9* SizeConfig.imageSizeMultiplier, //mob...big mob...tab
+                 //   color: CustomColors.black,
                   ),
                 ),
               ),
@@ -51,15 +52,18 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  title,
-                  style: TextStyle(
-                    fontFamily: "Metropolis",
-                    fontSize: SizeConfig.isMobilePortrait
-                        ? 2.5 * SizeConfig.textMultiplier
-                        : 2.5 * SizeConfig.textMultiplier,
-                    fontWeight: FontWeight.bold,
-                    color: CustomColors.black,
+                Padding(
+                  padding:  EdgeInsets.only(
+                    top: 0.8*SizeConfig.heightMultiplier
+                  ),
+                  child: Text(
+                    title,
+                    style: TextStyle(
+                      fontFamily: "Metropolis",
+                      fontSize:  3* SizeConfig.textMultiplier,
+                      fontWeight: FontWeight.bold,
+                     // color: CustomColors.black,
+                    ),
                   ),
                 ),
               ],

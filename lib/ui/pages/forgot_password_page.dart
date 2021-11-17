@@ -16,7 +16,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
         appBar: PlainAppBar(),
         body: Center(
           child: Container(
-            color: Colors.blue,
+           // color: Colors.blue,
           ),
         ),
       ),

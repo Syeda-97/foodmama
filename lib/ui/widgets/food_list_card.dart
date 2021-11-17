@@ -45,29 +45,38 @@ class FoodListCard extends StatelessWidget {
         },
         child: Card(
           elevation: 10,
-          color: Colors.lightBlueAccent[500],
+         // color: Colors.lightBlueAccent[500],
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadiusDirectional.circular(0.78*SizeConfig.heightMultiplier),),
-          child: Row(
-            //  crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
+          child: Padding(
+            padding: EdgeInsets.only(top: 20,bottom: 20,left: 10,right: 10),
+            child: Row(
+              //  crossAxisAlignment: CrossAxisAlignment.stretch,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
 
+                 Column(
+                   children: [
 
-              buildTitle(),
-              SizedBox(
-                height: 1*SizeConfig.heightMultiplier,
-              ),
-              buildImage(),
-              SizedBox(
-                height: 1*SizeConfig.heightMultiplier,
-              ),
-              buildDescriptionInfo(),
-              SizedBox(
-                height: 1*SizeConfig.heightMultiplier,
-              ),
-              //buildRating(),
-            ],
+                     buildImage(),
+                     SizedBox(
+                       height: 1*SizeConfig.heightMultiplier,
+                     ),
+                     buildTitle(),
+
+                   ],
+                 ),
+
+                SizedBox(
+                  height: 1*SizeConfig.heightMultiplier,
+                ),
+                buildDescriptionInfo(),
+                SizedBox(
+                  height: 1*SizeConfig.heightMultiplier,
+                ),
+                //buildRating(),
+              ],
+            ),
           ),
         ),
       ),
@@ -78,10 +87,10 @@ class FoodListCard extends StatelessWidget {
 
   Widget buildImage() {
     return Container(
-      height:40,//60,
-      width: 40,
+      height:8*SizeConfig.heightMultiplier,//60,
+      width: 16*SizeConfig.widthMultiplier,
       child: ClipRRect(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(5)),
+        borderRadius: BorderRadius.vertical(top: Radius.circular(2*SizeConfig.widthMultiplier),bottom:  Radius.circular(2*SizeConfig.widthMultiplier)),
         child: Image.asset(
           'assets/custom_images/ordered_food_images/' +
               imageUrl+".jpg",
@@ -95,7 +104,7 @@ class FoodListCard extends StatelessWidget {
     return Container(
       padding:  EdgeInsets.only(left: 2.22*SizeConfig.widthMultiplier, right: 2.22*SizeConfig.widthMultiplier),//8
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           SizedBox(
             height: 0.2*SizeConfig.heightMultiplier,
@@ -105,10 +114,10 @@ class FoodListCard extends StatelessWidget {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
-                fontSize: 1.88*SizeConfig.textMultiplier,
+                fontSize: 2.5*SizeConfig.textMultiplier,
                 fontFamily: CustomFonts.defaultFontFamily,
-                color: CustomColors.black,
-                fontWeight: FontWeight.w500
+              //  color: CustomColors.black,
+                fontWeight: FontWeight.bold
             ),
 
           ),
@@ -120,8 +129,9 @@ class FoodListCard extends StatelessWidget {
             maxLines: 3,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
-              color: Colors.black54,
-              fontSize: 1.50*SizeConfig.textMultiplier,
+            //  color: Colors.black54,
+              fontWeight: FontWeight.w600,
+              fontSize: 2.2*SizeConfig.textMultiplier,
               fontFamily: CustomFonts.defaultFontFamily,
             ),
           ),
@@ -133,8 +143,9 @@ class FoodListCard extends StatelessWidget {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
-              color: Colors.black54,
-              fontSize: 1.50*SizeConfig.textMultiplier,
+            //  color: Colors.black54,
+              fontWeight: FontWeight.w500,
+              fontSize: 2*SizeConfig.textMultiplier,
               fontFamily: CustomFonts.defaultFontFamily,
             ),
           ),
@@ -152,11 +163,11 @@ class FoodListCard extends StatelessWidget {
       padding: EdgeInsets.only(left: 2.22*SizeConfig.widthMultiplier, right: 2.22*SizeConfig.widthMultiplier ),
       child: Column(
         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Text(
-            price+"dollars",
-            style: TextStyle(fontSize: 1.20*SizeConfig.textMultiplier, fontWeight: FontWeight.bold,
+            price+String.fromCharCodes(new Runes('\u0024')), //DOLLAR
+            style: TextStyle(fontSize:2.3*SizeConfig.textMultiplier, fontWeight: FontWeight.bold,
               fontFamily: CustomFonts.defaultFontFamily,),
           ),
           SizedBox(
@@ -167,8 +178,9 @@ class FoodListCard extends StatelessWidget {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
-              color: Colors.black54,
-              fontSize: 1.50*SizeConfig.textMultiplier,
+              fontWeight: FontWeight.w500,
+              // color: Colors.black54,
+              fontSize: 2*SizeConfig.textMultiplier,
               fontFamily: CustomFonts.defaultFontFamily,
             ),
           ),
@@ -180,8 +192,9 @@ class FoodListCard extends StatelessWidget {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
-              color: Colors.black54,
-              fontSize: 1.50*SizeConfig.textMultiplier,
+              fontWeight: FontWeight.w500,
+             // color: Colors.black54,
+              fontSize: 2*SizeConfig.textMultiplier,
               fontFamily: CustomFonts.defaultFontFamily,
             ),
           ),

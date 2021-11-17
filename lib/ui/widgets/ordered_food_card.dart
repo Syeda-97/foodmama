@@ -44,27 +44,30 @@ class OrderedFoodCard extends StatelessWidget {
           );
         },
         child: Card(
-          elevation: 0,
+          elevation: 10,
         shape: RoundedRectangleBorder(
         borderRadius: BorderRadiusDirectional.circular(0.78*SizeConfig.heightMultiplier),),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              buildImage(),
-              SizedBox(
-                height: 1*SizeConfig.heightMultiplier,
-              ),
-              buildTitle(),
-              SizedBox(
-                height: 1*SizeConfig.heightMultiplier,
-              ),
-              buildDescriptionInfo(),
-              SizedBox(
-                height: 1*SizeConfig.heightMultiplier,
-              ),
-              buildRating(),
-            ],
+          child: Padding(
+            padding: EdgeInsets.all(2*SizeConfig.heightMultiplier),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                buildTitle(),
+                SizedBox(
+                  height: 1*SizeConfig.heightMultiplier,
+                ),
+                buildImage(),
+                SizedBox(
+                  height: 1*SizeConfig.heightMultiplier,
+                ),
+                buildDescriptionInfo(),
+                SizedBox(
+                  height: 1*SizeConfig.heightMultiplier,
+                ),
+                buildRating(),
+              ],
+            ),
           ),
         ),
       ),
@@ -75,7 +78,7 @@ class OrderedFoodCard extends StatelessWidget {
 
 Widget buildImage() {
   return Container(
-    height:9.38*SizeConfig.heightMultiplier,//60,
+    height:25*SizeConfig.heightMultiplier,//60,
     width: double.infinity,
     child: ClipRRect(
       borderRadius: BorderRadius.vertical(top: Radius.circular(5)),
@@ -96,37 +99,37 @@ Widget buildTitle() {
       children: <Widget>[
         Text(
           food_name,
-          maxLines: 1,
+          maxLines: 3,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(
-            fontSize: 1.88*SizeConfig.textMultiplier,
+            fontSize: 2.6*SizeConfig.textMultiplier,
               fontFamily: CustomFonts.defaultFontFamily,
-              color: CustomColors.black,
-              fontWeight: FontWeight.w500
+             // color: CustomColors.black,
+              fontWeight: FontWeight.bold
           ),
 
         ),
 
-        Text(
-          food_description,
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-          style: TextStyle(
-            color: Colors.black54,
-            fontSize: 1.50*SizeConfig.textMultiplier,
-            fontFamily: CustomFonts.defaultFontFamily,
-          ),
-        ),
-        Text(
-          quantity,
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-          style: TextStyle(
-            color: Colors.black54,
-            fontSize: 1.50*SizeConfig.textMultiplier,
-            fontFamily: CustomFonts.defaultFontFamily,
-          ),
-        ),
+        // Text(
+        //   food_description,
+        //   maxLines: 5,
+        //   overflow: TextOverflow.ellipsis,
+        //   style: TextStyle(
+        //    // color: Colors.black54,
+        //     fontSize: 2.3*SizeConfig.textMultiplier,
+        //     fontFamily: CustomFonts.defaultFontFamily,
+        //   ),
+        // ),
+        // Text(
+        //   quantity,
+        //   maxLines: 1,
+        //   overflow: TextOverflow.ellipsis,
+        //   style: TextStyle(
+        //     color: Colors.black54,
+        //     fontSize: 1.50*SizeConfig.textMultiplier,
+        //     fontFamily: CustomFonts.defaultFontFamily,
+        //   ),
+        // ),
       ],
     ),
   );
@@ -141,13 +144,18 @@ Widget buildTitle() {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Expanded(
-            child: Text(
+            child:   Text(
               food_description,
-              maxLines: 3,
+              maxLines: 5,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(fontSize: 1.20*SizeConfig.textMultiplier, fontWeight: FontWeight.bold,
-                fontFamily: CustomFonts.defaultFontFamily,),
+              style: TextStyle(
+                // color: Colors.black54,
+                fontSize: 2.2*SizeConfig.textMultiplier,
+                fontWeight: FontWeight.w500,
+                fontFamily: CustomFonts.defaultFontFamily,
+              ),
             ),
+
           ),
           // Expanded(
           //     child: Text(
@@ -176,7 +184,7 @@ Widget buildRating() {
           unratedColor: Colors.black,
           itemPadding: EdgeInsets.only(right: 0.8*SizeConfig.widthMultiplier),
           ignoreGestures: true,
-          itemBuilder: (context, index) => Icon(Icons.star, color: Colors.red),
+          itemBuilder: (context, index) => Icon(Icons.star, color: CustomColors.redDark),
           onRatingUpdate: (rating) {},
         ),
         Expanded(
@@ -184,8 +192,8 @@ Widget buildRating() {
               overflow: TextOverflow.ellipsis,
               maxLines: 1,
             style: TextStyle(
-                color: CustomColors.black,
-                fontSize: 1.20*SizeConfig.textMultiplier,
+            //    color: CustomColors.black,
+                fontSize: 1.9*SizeConfig.textMultiplier,
                 fontFamily: CustomFonts.defaultFontFamily,
                 fontWeight: FontWeight.w500
             ),),

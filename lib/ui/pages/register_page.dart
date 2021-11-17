@@ -16,7 +16,7 @@ class RegisterPage extends StatelessWidget {
       top: true,
       bottom: false,
       child: Scaffold(
-        backgroundColor: CustomColors.white,
+      //  backgroundColor: CustomColors.white,
         appBar:   MainAppBar(title: "Register",),
         body: Stack(
           children: <Widget>[

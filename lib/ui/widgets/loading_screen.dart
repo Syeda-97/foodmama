@@ -53,7 +53,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
                 seconds: 8,
               ),
               child: SpinKitFadingCube(//https://pub.dev/packages/flutter_spinkit
-                color: CustomColors.bgColorDark,
+                color: Theme.of(context).colorScheme.secondary, //will change as per theme
                 size: 50.0,
               ),
             ),

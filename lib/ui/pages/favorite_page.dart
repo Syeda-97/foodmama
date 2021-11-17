@@ -13,7 +13,7 @@ class _FavoritePageState extends State<FavoritePage> {
     return Scaffold(
       appBar: MainAppBar(title: "Favourite",),
       body: Container(
-        color: Colors.red,
+       // color: Colors.red,
       ),
     );
   }

@@ -34,7 +34,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
       child: Scaffold(
         extendBody: true,
         floatingActionButton: FloatingActionButton(
-          backgroundColor: CustomColors.bgColorLight,
+         // backgroundColor: CustomColors.bgColorLight,
           onPressed: (){
 
             Navigator.push(
@@ -52,7 +52,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: BottomAppBar(
-          color: CustomColors.bgColorLight,
+         // color: CustomColors.bgColorLight,
           shape: CircularNotchedRectangle(
           ),
           child: Container(

@@ -20,9 +20,10 @@ class LoginAppbar extends StatelessWidget {
               },
               child: new CircleAvatar(
                   child: Icon(Icons.navigate_before,
-                    color: CustomColors.black,),
+                    //color: CustomColors.black,
+                  ),
                   foregroundColor: CustomColors.white,
-                  backgroundColor: CustomColors.bgColorLight
+                 // backgroundColor: CustomColors.bgColorLight
               ),
             ),
             width: 8.89*SizeConfig.widthMultiplier,

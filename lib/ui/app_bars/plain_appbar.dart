@@ -7,7 +7,8 @@ class PlainAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return Container(
      height: 10*SizeConfig.heightMultiplier,
-      color: CustomColors.white,
+     // color: CustomColors.white,
+      color: Theme.of(context).colorScheme.secondary,
       child: Padding(
         padding: EdgeInsets.only(
           left: 2.78*SizeConfig.widthMultiplier,

@@ -15,7 +15,7 @@ class _OfferPageState extends State<OfferPage> {
     return Scaffold(
       appBar: MainAppBar(title: "Offer",),
       body: Container(
-        color: Colors.green,
+     //   color: Colors.green,
       ),
     );
   }

@@ -515,7 +515,8 @@ class NextButtonWidget extends StatelessWidget {
         onPressed: (){
 
         },
-        color: CustomColors.bgColorLight,
+        color: Theme.of(context).colorScheme.secondary,
+        // color: CustomColors.bgColorLight,
         // textColor: Colors.white,
         elevation: 1.56 *
             SizeConfig
@@ -528,17 +529,18 @@ class NextButtonWidget extends StatelessWidget {
           ), //40.0/3.6
           side: BorderSide(
             width: 2,
-            color: Colors.black,
+           // color: Colors.black,
           ),
         ),
         // padding: const EdgeInsets.all(0.0),
         padding: EdgeInsets.all(
             1.75 * SizeConfig.heightMultiplier),
-        child: Text("NEXT",
+        child: Text("SAVE",
             // textAlign: TextAlign.center,
             style: TextStyle(
               // fontSize: 15,
                 fontFamily: "Metropolis",
+                fontWeight: FontWeight.bold,
                 // fontSize: 2.34*SizeConfig.textMultiplier,
                 fontSize: 2.25 *
                     SizeConfig
@@ -546,7 +548,8 @@ class NextButtonWidget extends StatelessWidget {
                 // fontFamily: "Oswald",
                 // letterSpacing: 1.2,
 
-                color: Colors.black)),
+               // color: Colors.black
+            )),
       ),
 
     );

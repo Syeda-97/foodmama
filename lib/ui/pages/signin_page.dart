@@ -21,9 +21,9 @@ class SigninPage extends StatelessWidget {
         body: Stack(
           children: <Widget>[
             Container(
-              decoration: BoxDecoration(
-                  color: Colors.white
-              ),
+              // decoration: BoxDecoration(
+              //     color: Colors.white
+              // ),
             ),
             //new LoginRegisterAppbar(),
             Positioned(
@@ -51,7 +51,7 @@ class SigninPage extends StatelessWidget {
                           Container(
                             child: CircleAvatar(
                               radius: 25*SizeConfig.imageSizeMultiplier,
-                              backgroundColor: CustomColors.bgColorLight,
+                             // backgroundColor: CustomColors.bgColorLight,
                               child:  Container(
                                 width: 63.89*SizeConfig.widthMultiplier,
                                 height: 15.63*SizeConfig.heightMultiplier,
