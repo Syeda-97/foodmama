@@ -76,7 +76,7 @@ Fig F displays drawer having logged in user information like username, photo and
 ![image](https://user-images.githubusercontent.com/56088042/148737765-b4298af1-225b-4920-a258-a8cffe6a37d9.png)  ![image](https://user-images.githubusercontent.com/56088042/148737793-51fe755a-786d-4013-9e78-e0ffa6aa3c54.png)
 
 
-Fig G: Login page                                	    Fig H: Register page
+              Fig G: Login page                                                                       	    Fig H: Register page
 
 In Fig G, login page is shown where email and password need to be given if the user is registered then it will redirect to homepage and in snack bar it will provide message otherwise user need to register shown in Fig H.
 
@@ -147,6 +147,8 @@ While pressing on each item of staggered grid view food details page will be ope
 
 
 Summary
+
+
 This app has dynamic theming, login, register and order option. For new offers and discounts users will be notified and those notifications will be saved in a page. It has user friendly UI design for better understanding of users regarding all of the options provided in the app. It can be used as food delivery system, grocery management system etc.
 
 
