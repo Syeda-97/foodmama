@@ -55,6 +55,8 @@ In Fig A, loading screen displays when the app loads and navigate to navigation 
 
 
 Here, the home or main screen displays staggered grid view with the list of foods from the firebase database (shown in Fig C) as shown in Fig B. I also added tab bar to view different tabs as per user desired food category. 
+
+
 ![image](https://user-images.githubusercontent.com/56088042/148737696-ffa308c9-03b2-4297-8f53-c041db21c626.png)  ![image](https://user-images.githubusercontent.com/56088042/148737720-e888fe7a-d313-4869-81ca-b84f01bdb39d.png)
 
 
@@ -104,12 +106,17 @@ Fig K and L shows Terms and Conditions and Privacy page respectively where dummy
                 Fig M: Notifications page                     Fig N: History page
 
 In Fig M, list of notifications will be saved on notification page and in Fig N, the list of history will be saved on history page where I shown the usage of List view.
+
+
+
 ![image](https://user-images.githubusercontent.com/56088042/148738009-dc20357b-c77c-4d7c-9786-33d425b40821.png)
 
  
 Fig O: Language Settings page
 
 Fig O displays the UI of language settings page.
+
+
 ![image](https://user-images.githubusercontent.com/56088042/148738025-65d2ae9c-2f86-40ff-bef0-929820672b3f.png)
 
 Fig P: Help & support page
