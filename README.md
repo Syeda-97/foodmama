@@ -32,6 +32,8 @@ Documentation of Food Mama Flutter App
 ############################
 
 Project name: Food Mama
+
+
 Feature details:
 This is the UI/UX design of a Flutter-based app. In this task, I have shown the usage of Firebase real-time database to view food information (food’s name, price, description etc.) from firebase database. Here, I have also shown the usage of firebase notification, dynamic theming concept, authentication using firebase, adding login information to firebase database, usage of bloc state management system etc.
  
