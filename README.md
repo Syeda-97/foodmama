@@ -29,7 +29,7 @@ Some user interfaces of the following app's screenshot is provided below:
 
 ############################
 Documentation of Food Mama Flutter App
-
+############################
 
 Project name: Food Mama
 Feature details:
@@ -63,22 +63,23 @@ Here, the home or main screen displays staggered grid view with the list of food
 Fig D displays firebase push notification mechanism to send a notification message to user. In Fig E, firebase push notification alert count is being shown which will increment automatically when notification is being pushed from firebase or tabbed on notification icon of homepage.
 
 
- ![image](https://user-images.githubusercontent.com/56088042/148737749-52b055d7-fd9b-42d5-ba85-05464a8c8b5c.png)
+![image](https://user-images.githubusercontent.com/56088042/148737749-52b055d7-fd9b-42d5-ba85-05464a8c8b5c.png)
 
 Fig F: Drawer 
 
 Fig F displays drawer having logged in user information like username, photo and email address as well it contains some pages like orders, notifications, history etc.
 
-        ![image](https://user-images.githubusercontent.com/56088042/148737765-b4298af1-225b-4920-a258-a8cffe6a37d9.png)  ![image](https://user-images.githubusercontent.com/56088042/148737793-51fe755a-786d-4013-9e78-e0ffa6aa3c54.png)
+![image](https://user-images.githubusercontent.com/56088042/148737765-b4298af1-225b-4920-a258-a8cffe6a37d9.png)  ![image](https://user-images.githubusercontent.com/56088042/148737793-51fe755a-786d-4013-9e78-e0ffa6aa3c54.png)
 
 
 Fig G: Login page                                	    Fig H: Register page
 
 In Fig G, login page is shown where email and password need to be given if the user is registered then it will redirect to homepage and in snack bar it will provide message otherwise user need to register shown in Fig H.
 
- ![image](https://user-images.githubusercontent.com/56088042/148737882-744f9d1c-4c0a-453d-a266-fc81d499caef.png)
+![image](https://user-images.githubusercontent.com/56088042/148737882-744f9d1c-4c0a-453d-a266-fc81d499caef.png)
 
     Fig I: Firebase authentication
+    
 Fig I display firebase email password authentication mechanism. If user is not registered then it will provide message in snack bar.
 ![image](https://user-images.githubusercontent.com/56088042/148737904-7e86eebe-9bcf-4f11-9247-db920209b966.png)
 
@@ -86,13 +87,16 @@ Fig I display firebase email password authentication mechanism. If user is not r
     Fig J: Firebase database to save data
 
 In Fig J, I just saved some data in firebase database from login and register page of our app. The password of any kind of user shouldn’t save for any purpose without user consent but just to show the workings of firebase database post mechanism we have saved it too in our database.
-      ![image](https://user-images.githubusercontent.com/56088042/148737928-4c7d50f4-d817-4266-b866-a242bede403b.png)  ![image](https://user-images.githubusercontent.com/56088042/148737945-0b7b36ad-8781-45aa-a007-7891d21693d7.png)
+
+
+![image](https://user-images.githubusercontent.com/56088042/148737928-4c7d50f4-d817-4266-b866-a242bede403b.png)  ![image](https://user-images.githubusercontent.com/56088042/148737945-0b7b36ad-8781-45aa-a007-7891d21693d7.png)
 
  
        Fig K: Terms and Conditions page                      Fig L: Privacy page 
 
 Fig K and L shows Terms and Conditions and Privacy page respectively where dummy content is being provided.
-                    ![image](https://user-images.githubusercontent.com/56088042/148737970-4630c653-7046-481f-b756-52b1d3faf379.png)  ![image](https://user-images.githubusercontent.com/56088042/148737990-68a5404b-12fc-4a1a-8083-a7cb69a55fd2.png)
+
+![image](https://user-images.githubusercontent.com/56088042/148737970-4630c653-7046-481f-b756-52b1d3faf379.png)  ![image](https://user-images.githubusercontent.com/56088042/148737990-68a5404b-12fc-4a1a-8083-a7cb69a55fd2.png)
 
  
                 Fig M: Notifications page                     Fig N: History page
@@ -104,22 +108,27 @@ In Fig M, list of notifications will be saved on notification page and in Fig N,
 Fig O: Language Settings page
 
 Fig O displays the UI of language settings page.
- ![image](https://user-images.githubusercontent.com/56088042/148738025-65d2ae9c-2f86-40ff-bef0-929820672b3f.png)
+![image](https://user-images.githubusercontent.com/56088042/148738025-65d2ae9c-2f86-40ff-bef0-929820672b3f.png)
 
 Fig P: Help & support page
 
 If user have any query regarding this app or face any problem while using this app then they may take support from us by providing us some of their basic contact info and the message regarding the issue which is shown in Fig P. We would try to reach them soon by mailing or calling them.
- ![image](https://user-images.githubusercontent.com/56088042/148738045-5715ccf8-9dd9-4935-83e3-bdc1e6681ea9.png)
+
+![image](https://user-images.githubusercontent.com/56088042/148738045-5715ccf8-9dd9-4935-83e3-bdc1e6681ea9.png)
 
 Fig Q: Settings page
+
 User have the option to choose their desired theme in Settings page shown in Fig Q. To do this particular task of dynamic theming, we used bloc state management system to manage our states throughout the app.
+
 ![image](https://user-images.githubusercontent.com/56088042/148738056-17b2bca3-2716-4c05-95e8-2ffa4a116c13.png)
 
  
 Fig R: Dark mode
 
 Fig R shows dark mode of the app.
-       ![image](https://user-images.githubusercontent.com/56088042/148738084-ff3a175d-002e-4bb3-8b25-6bba11b29b31.png)  ![image](https://user-images.githubusercontent.com/56088042/148738103-ef1863dc-4261-4aa9-92ba-decaf9242ffa.png)
+
+
+![image](https://user-images.githubusercontent.com/56088042/148738084-ff3a175d-002e-4bb3-8b25-6bba11b29b31.png)  ![image](https://user-images.githubusercontent.com/56088042/148738103-ef1863dc-4261-4aa9-92ba-decaf9242ffa.png)
 
 
              Fig S: Food details page                            Fig T: Ordered food page
